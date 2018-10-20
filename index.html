@@ -16,7 +16,11 @@
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
 
         <!-- Custom CSS styles for this page -->
-        <!-- <link href="assets/css/styles.css" rel="stylesheet"> -->
+        <link href="assets/css/styles.css" rel="stylesheet">
+
+        <link href="assets/css/styles.css" rel="stylesheet">
+
+        <link href="assets/javascript/app.js" rel="stylesheet"> 
 
     </head>
 
@@ -53,33 +57,35 @@
             <div class="row text-left mt-4">
 
                 <div class="col-lg-12 col-md-12 mb-4">
-                    <div class="card">
-                        <div class="card-body">
-                            <h4 class="card-title">Digital Artist, Full-Stack Developer</h4>
-                            <hr>
-                            <div class="card-text">
-                                <img class="img-thumbnail float-left mr-3 mb-1" src="assets/images/profile1small.jpg" width="150" alt="My headshot">
-                                <p>
-                                    I am a web developer with a strong design background. I also have experience working with online commerce and marketing for several fashion & makeup industry startups.      
-                                </p>
-                                <p>
-                                    My academic achievements include a first-class BA(Hons) from the University of Westminster in Photographic Arts and a postgraduate masters degree in Digital Arts from UAL, London.
-                                </p>
-                                <p>
-                                    While working on my masters thesis I taught photography to animation undergraduates in Helsinki, Finland, on a program supported by Pixar. Originally contracted for a single semester, I enjoyed it so much that I stayed for three years, founding and managing an entirely new facility for digital capture.
-                                </p>
-                                <p>
-                                    As a digital artist who dabbles in backend technologies I am now studying full stack JavaScript development using the MERN stack at UC Berkeley Extension. I love building apps and my goal is to work more extensively with back and front end integration for design-lead projects.
-                                </p>
-
-                            </div>
+                    <form>
+                        <div class="form-group">
+                            <label for="InputSearchTerm">Search Term:</label>
+                            <input type="input" class="form-control" id="searchTerm" aria-describedby="Search Term" placeholder="">
+                            <!-- <small id="emailHelp" class="form-text text-muted"></small> -->
                         </div>
-                        <div class="card-footer text-center">
-                            <a href="portfolio.html" class="btn btn-outline-dark btn-sl m-1">Portfolio</a>
-                            <a href="https://github.com/BradBones" target="_blank" class="btn btn-outline-dark btn-sl m-1">GitHub</a>
-                            <a href="contact.html" class="btn btn-outline-dark btn-sl m-1">Contact</a>
+                        <div class="form-group">
+                            <label for="InputRecords">Number of Records to Retrieve:</label>
+                            <select class="form-control" id="numRecords" placeholder="">
+                                <option>5</option>
+                                <option>4</option>
+                                <option>3</option>
+                                <option>2</option>
+                                <option>1</option>
+                            </select>
                         </div>
-                    </div>    
+                        <div class="form-group">
+                            <label for="InputSearchTerm">Start Year (Optional):</label>
+                            <input type="input" class="form-control" id="startYear" aria-describedby="Start Year" placeholder="2015">
+                            <small class="form-text text-muted">Enter a 4 digit year.</small>
+                        </div>
+                        <div class="form-group">
+                            <label for="InputSearchTerm">End Year (Optional):</label>
+                            <input type="input" class="form-control" id="endYear" aria-describedby="End Year" placeholder="2018">
+                            <small class="form-text text-muted">Enter a 4 digit year.</small>
+                        </div>
+                            <button type="submit" class="btn btn-primary">Search</button>
+                            <button type="submit" class="btn btn-primary">Clear Results</button>
+                    </form>
                 </div>
     
                 <!-- Cards - Technologies & Education -->
@@ -87,58 +93,19 @@
 
                     <div class="row text-left mt-4">
 
-                        <div class="col-lg-6 col-md-6 mb-4">
+                        <div class="col-lg-12 col-md-12 mb-4">
                             <div class="card">
                                 <div class="card-body">
-                                <h6 class="card-title red">Technologies</h4>
+                                <h6 class="card-title red">Top Articles</h4>
                                 <hr>
-                                <div class="card-text">
-                                    <ul class="pl-4 red-dot">
-                                        <li>
-                                            Full 'MERN' Stack Development
-                                        </li>
-                                        <li>
-                                            JavaScript | Express | React | Node
-                                        </li>
-                                        <li>
-                                            Mongo DB | SQL
-                                        </li>
-                                        <li>
-                                            HTML | CSS | Bootstrap
-                                        </li>
-
-                                    </ul>
-
+                                <div id="topArticles" class="card-text">
+                                    
                                 </div>
                             </div>   
                         </div> 
                     </div>
 
-                    <div class="col-lg-6 col-md-6 mb-4">
-                        <div class="card">
-                            <div class="card-body">
-                                <h6 class="card-title red">Education</h4>
-                                <hr>
-                                <div class="card-text">
-                                    <ul class="pl-4 red-dot">
-                                        <li>
-                                            UC Berkeley | Full-Stack Bootcamp 
-                                        </li>
-                                        <li>
-                                            MA Digital Arts | University of the Arts London (UAL)
-                                        </li>
-                                        <li>
-                                            BA(Hons) Photographic Arts | University of Westminster
-                                        </li>
-                                        <li>
-                                            ND Design / HNC | City of Westminster College
-                                        </li>
-                                    </ul>
-    
-                                </div>
-                            </div>
-                        </div>    
-                    </div>
+                    
                 </div>
             </div>
         </div>
@@ -147,7 +114,7 @@
         <!-- Footer -->
         <footer class="pt-4 pb-2 bg-light fixed-bottom">
             <div class="container">
-                <p class="m-0 text-center text-grey">&copy; Neil Bradley Young 2018 - All rights reserved.</p>
+                <p class="m-0 text-center text-grey">&copy; SHJN Team - All rights reserved.</p>
             </div>
     
         </footer>

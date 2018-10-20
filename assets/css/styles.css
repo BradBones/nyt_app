@@ -1,11 +1,8 @@
 /*
-
 ******* CUSTOM SETTINGS TO OVERRIDE BOOTSTRAP DEFAULTS *******
-
 ====================
 GENERAL PAGE STYLING
 ====================
-
 Adds some white space between the header bar and the page content */
 body {
   font-size: .85em;
@@ -24,7 +21,6 @@ h1, h2, h3, h4, h5, h6 {
 ====================
 FORMS
 ====================
-
 Overrides the generic form-control class typography settings */
 .form-control {
   font-size: 1em;
@@ -35,16 +31,16 @@ Overrides the generic form-control class typography settings */
 /* Changes the placeholder text color in forms to the theme red
 various settings for diferent browsers */
 .form-control::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
-  color: rgb(187, 10, 30);
+  color: rgb(29, 0, 195);
   opacity: 1; /* Firefox */
 }
 
 .form-control:-ms-input-placeholder { /* Internet Explorer 10-11 */
-  color: rgb(187, 10, 30);
+  color: rgb(29, 0, 195);
 }
 
 .form-control::-ms-input-placeholder { /* Microsoft Edge */
-  color: rgb(187, 10, 30);
+  color: rgb(29, 0, 195);
 }
 
 
@@ -52,10 +48,9 @@ various settings for diferent browsers */
 ====================
 ELEMENT THEME COLORS
 ====================
-
 Classes for changing elements to the theme red color or dark grey */
 .red {
-  color: rgb(187, 10, 30);
+  color: rgb(29, 0, 195);
 }
 
 .dark {
@@ -67,7 +62,6 @@ Classes for changing elements to the theme red color or dark grey */
 ====================
 CARDS - HEIGHT & LINE COLORS
 ====================
-
 "Height 100%" forces all of the cards in the portfolio to fill their container vertically
 (so that the bottom edges line up.) */
 .card {
@@ -84,10 +78,9 @@ CARDS - HEIGHT & LINE COLORS
 ====================
 NAV BAR TRICKS
 ====================
-
 Very specific "Fargo Red" to underline the navbar */
 .navbar {
-  border-bottom: 2px solid rgb(187, 10, 30);
+  border-bottom: 2px solid rgb(29, 0, 195);
 }
 
 /* Adds a "|" after each link to separate them (but not after the last link) */
@@ -103,10 +96,8 @@ nav li:not(:first-child):before {
 ====================
 UNORDERED LIST TRICKS
 ====================
-
 Creates custom themed red bullets in lists with the class .red-dot 
 It's silly, but I'm really proud of this!! ;)
-
 Resets default list styles (removes all bullets) */
 ul.red-dot {
   list-style: none;
@@ -114,7 +105,7 @@ ul.red-dot {
 
 /* Cureates new custom themed bullets */
 ul.red-dot li::before  {
-  content: "•"; color: rgb(187, 10, 30);
+  content: "•"; color: rgb(29, 0, 195);
   font-size: 1.25em;
   font-weight: 500;
   display: inline-block; width: 1em;
@@ -126,9 +117,8 @@ ul.red-dot li::before  {
 ====================
 FOOTER
 ====================
-
 Styles the footer to match the nav bar at the top of the page */
 footer {
   font-size: .5em;
-  border-top: 2px solid rgb(187, 10, 30);
+  border-top: 2px solid rgb(29, 0, 195);
 }
