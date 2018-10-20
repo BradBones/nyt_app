@@ -35,16 +35,16 @@ Overrides the generic form-control class typography settings */
 /* Changes the placeholder text color in forms to the theme red
 various settings for diferent browsers */
 .form-control::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
-  color: rgb(187, 10, 30);
+  color: rgb(29, 0, 195);
   opacity: 1; /* Firefox */
 }
 
 .form-control:-ms-input-placeholder { /* Internet Explorer 10-11 */
-  color: rgb(187, 10, 30);
+  color: rgb(29, 0, 195);
 }
 
 .form-control::-ms-input-placeholder { /* Microsoft Edge */
-  color: rgb(187, 10, 30);
+  color: rgb(29, 0, 195);
 }
 
 
@@ -55,7 +55,7 @@ ELEMENT THEME COLORS
 
 Classes for changing elements to the theme red color or dark grey */
 .red {
-  color: rgb(187, 10, 30);
+  color: rgb(29, 0, 195);
 }
 
 .dark {
@@ -87,7 +87,7 @@ NAV BAR TRICKS
 
 Very specific "Fargo Red" to underline the navbar */
 .navbar {
-  border-bottom: 2px solid rgb(187, 10, 30);
+  border-bottom: 2px solid rgb(29, 0, 195);
 }
 
 /* Adds a "|" after each link to separate them (but not after the last link) */
@@ -114,7 +114,7 @@ ul.red-dot {
 
 /* Cureates new custom themed bullets */
 ul.red-dot li::before  {
-  content: "•"; color: rgb(187, 10, 30);
+  content: "•"; color: rgb(29, 0, 195);
   font-size: 1.25em;
   font-weight: 500;
   display: inline-block; width: 1em;
@@ -130,5 +130,5 @@ FOOTER
 Styles the footer to match the nav bar at the top of the page */
 footer {
   font-size: .5em;
-  border-top: 2px solid rgb(187, 10, 30);
+  border-top: 2px solid rgb(29, 0, 195);
 }
