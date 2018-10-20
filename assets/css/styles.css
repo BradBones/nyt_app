@@ -43,19 +43,16 @@ various settings for diferent browsers */
   color: rgb(29, 0, 195);
 }
 
-
 /*
 ====================
-ELEMENT THEME COLORS
+Button Colors
 ====================
-Classes for changing elements to the theme red color or dark grey */
-.red {
-  color: rgb(29, 0, 195);
+*/
+.btn {
+  background-color: rgb(29, 0, 195);
+  border: 1px solid rgb(29, 0, 195);
 }
 
-.dark {
-  color: #333;
-}
 
 
 /*
@@ -73,46 +70,6 @@ CARDS - HEIGHT & LINE COLORS
   border-top: 1px solid #999;
 }
 
-
-/*
-====================
-NAV BAR TRICKS
-====================
-Very specific "Fargo Red" to underline the navbar */
-.navbar {
-  border-bottom: 2px solid rgb(29, 0, 195);
-}
-
-/* Adds a "|" after each link to separate them (but not after the last link) */
-nav li:not(:first-child):before {
-  content: " | ";
-  opacity: 0.3;
-  position: absolute;
-  padding-top: .5em;
-}
-
-
-/*
-====================
-UNORDERED LIST TRICKS
-====================
-Creates custom themed red bullets in lists with the class .red-dot 
-It's silly, but I'm really proud of this!! ;)
-Resets default list styles (removes all bullets) */
-ul.red-dot {
-  list-style: none;
-}
-
-/* Cureates new custom themed bullets */
-ul.red-dot li::before  {
-  content: "•"; color: rgb(29, 0, 195);
-  font-size: 1.25em;
-  font-weight: 500;
-  display: inline-block; width: 1em;
-  margin-left: -1em
-}
-
-
 /*
 ====================
 FOOTER
@@ -121,8 +78,4 @@ Styles the footer to match the nav bar at the top of the page */
 footer {
   font-size: .5em;
   border-top: 2px solid rgb(29, 0, 195);
-<<<<<<< HEAD
 }
-=======
-}
->>>>>>> ddd153c7e96951f3df4b22c7e7637b48145debe6
