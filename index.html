@@ -57,7 +57,7 @@
                         <div class="form-group">
                             <label for="InputSearchTerm">Search Term:</label>
                             <input type="input" class="form-control" id="searchTerm" aria-describedby="Search Term" placeholder="">
-                            <small id="emailHelp" class="form-text text-muted"></small>
+                            <!-- <small id="emailHelp" class="form-text text-muted"></small> -->
                         </div>
                         <div class="form-group">
                             <label for="InputRecords">Number of Records to Retrieve:</label>
@@ -71,13 +71,13 @@
                         </div>
                         <div class="form-group">
                             <label for="InputSearchTerm">Start Year (Optional):</label>
-                            <input type="input" class="form-control" id="startYear" aria-describedby="Search Term" placeholder="2015">
-                            <small id="emailHelp" class="form-text text-muted">Enter a 4 digit year.</small>
+                            <input type="input" class="form-control" id="startYear" aria-describedby="Start Year" placeholder="2015">
+                            <small class="form-text text-muted">Enter a 4 digit year.</small>
                         </div>
                         <div class="form-group">
                             <label for="InputSearchTerm">End Year (Optional):</label>
-                            <input type="input" class="form-control" id="endYear" aria-describedby="Search Term" placeholder="2018">
-                            <small id="emailHelp" class="form-text text-muted">Enter a 4 ditit year.</small>
+                            <input type="input" class="form-control" id="endYear" aria-describedby="End Year" placeholder="2018">
+                            <small class="form-text text-muted">Enter a 4 digit year.</small>
                         </div>
                             <button type="submit" class="btn btn-primary">Search</button>
                             <button type="submit" class="btn btn-primary">Clear Results</button>
@@ -94,7 +94,7 @@
                                 <div class="card-body">
                                 <h6 class="card-title red">Top Articles</h4>
                                 <hr>
-                                <div class="card-text">
+                                <div id="topArticles" class="card-text">
                                     
                                 </div>
                             </div>   
